@@ -62,11 +62,11 @@ esac
 
 
 if [ "$(uname)" = "Darwin" ]; then
-    url="https://github.com/actiancorp/helm-push/releases/download/v${version}/helm-push_${version}_darwin_${arch}.tar.gz"
+    url="https://github.com/actiancorp/helm-push/releases/download/v${version}/helm-push_v${version}_darwin_${arch}.tgz"
 elif [ "$(uname)" = "Linux" ] ; then
-    url="https://github.com/actiancorp/helm-push/releases/download/v${version}/helm-push_${version}_linux_${arch}.tar.gz"
+    url="https://github.com/actiancorp/helm-push/releases/download/v${version}/helm-push_v${version}_linux_${arch}.tgz"
 else
-    url="https://github.com/actiancorp/helm-push/releases/download/v${version}/helm-push_${version}_windows_${arch}.tar.gz"
+    url="https://github.com/actiancorp/helm-push/releases/download/v${version}/helm-push_v${version}_windows_${arch}.tgz"
 fi
 
 echo $url
